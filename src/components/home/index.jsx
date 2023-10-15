@@ -1,3 +1,5 @@
+import AboutUs from "../about_us/about_us";
+import ContactUs from "../contact_us/contact_us";
 import NavBar from "../shared/navbar";
 import About from "./about";
 import HomeMenu from "./home_menu";

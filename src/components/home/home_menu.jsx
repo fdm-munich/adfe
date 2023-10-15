@@ -10,9 +10,9 @@ const HomeMenu = () => {
           to="events"
           spy={ true }
           smooth={ true }
-          offset={ -250 }
+          offset={ -450 }
           duration={ 500 }
-          className="active:text-upsdell-red "
+          className="hover:cursor-pointer"
         >
           Evenements
         </Link>
@@ -23,36 +23,39 @@ const HomeMenu = () => {
           to="page-about"
           spy={ true }
           smooth={ true }
-          offset={ -100 }
+          offset={ -200 }
           duration={ 500 }
+          className="hover:cursor-pointer"
         >
           Notre association
         </Link>
       </li>
-      {/* <li>
-              <Link
-                activeClass="text-upsdell-red"
-                to="section2"
-                spy={ true }
-                smooth={ true }
-                offset={ -210 }
-                duration={ 500 }
-              >
-                Section 2
-              </Link>
-            </li>
-            <li>
-              <Link
-                activeClass="text-upsdell-red"
-                to="section3"
-                spy={ true }
-                smooth={ true }
-                offset={ -70 }
-                duration={ 500 }
-              >
-                Section 3
-              </Link>
-            </li> */}
+      <li>
+        <Link
+          activeClass="text-upsdell-red"
+          to="joinus"
+          spy={ true }
+          smooth={ true }
+          offset={ -200  }
+          duration={ 500 }
+          className="hover:cursor-pointer"
+        >
+          Nous rejoindre
+        </Link>
+      </li>
+      <li>
+        <Link
+          activeClass="text-upsdell-red"
+          to="contact"
+          spy={ true }
+          smooth={ true }
+          offset={ -600 }
+          duration={ 500 }
+          className="hover:cursor-pointer"
+        >
+          Contact
+        </Link>
+      </li>
     </ul>
   );
 };

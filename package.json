@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://alexiszankowitch.github.io/fdm-munich",
+  "homepage": "https://alexiszankowitch.github.io/adfe",
   "scripts": {
     "dev": "vite",
     "build": "vite build",

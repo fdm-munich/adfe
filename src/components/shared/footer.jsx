@@ -8,20 +8,20 @@ const Footer2 = () => {
       <div className="sm:flex sm:items-center sm:justify-between">
         <div className="flex items-center mb-6 md:mb-0">
           <a href="https://francais-du-monde.org" className="flex items-center" target="_blank" rel="noreferrer">
-            <img src="/fdm-munich/img/fdm-footer.png" className="mr-3 h-8" alt="Francais du monde logo" />
+            <img src="/adfe/img/fdm-footer.png" className="mr-3 h-8" alt="Francais du monde logo" />
           </a>
         </div>
         <div className="flex mt-4 space-x-6 sm:justify-center sm:mt-0">
           <a href="#" className="text-gray-500 hover:text-gray-900 dark:hover:text-white">
-            <img src="/fdm-munich/img/twitter_logo.png" className="w-5 h-5"/>
+            <img src="/adfe/img/twitter_logo.png" className="w-5 h-5"/>
             <span className="sr-only">Twitter page</span>
           </a>
           <a href="https://www.facebook.com/ADFEMunich" className="text-gray-500 hover:text-gray-900 dark:hover:text-white">
-            <img src="/fdm-munich/img/facebook_logo.png" className="w-5 h-5"/>
+            <img src="/adfe/img/facebook_logo.png" className="w-5 h-5"/>
             <span className="sr-only">Facebook page</span>
           </a>
           <a href="#" className="text-gray-500 hover:text-gray-900 dark:hover:text-white">
-            <img src="/fdm-munich/img/instagram_logo.png" className="w-5 h-5"/>
+            <img src="/adfe/img/instagram_logo.png" className="w-5 h-5"/>
             <span className="sr-only">Instagram page</span>
           </a>
         </div>
@@ -38,21 +38,21 @@ const Footer = () => {
       <div className="max-w-screen-xl mx-auto flex flex-col items-center sm:flex-row sm:justify-between">
         <div className="flex mt-4 space-x-6 sm:justify-center sm:mt-0 mb-4 sm:mb-0">
           <a href="#" className="text-gray-500 hover:text-gray-900 dark:hover:text-white">
-            <img src="/fdm-munich/img/twitter_logo.png" className="w-5 h-5"/>
+            <img src="/adfe/img/twitter_logo.png" className="w-5 h-5"/>
             <span className="sr-only">Twitter page</span>
           </a>
           <a href="https://www.facebook.com/ADFEMunich" className="text-gray-500 hover:text-gray-900 dark:hover:text-white">
-            <img src="/fdm-munich/img/facebook_logo.png" className="w-5 h-5"/>
+            <img src="/adfe/img/facebook_logo.png" className="w-5 h-5"/>
             <span className="sr-only">Facebook page</span>
           </a>
           <a href="#" className="text-gray-500 hover:text-gray-900 dark:hover:text-white">
-            <img src="/fdm-munich/img/instagram_logo.png" className="w-5 h-5"/>
+            <img src="/adfe/img/instagram_logo.png" className="w-5 h-5"/>
             <span className="sr-only">Instagram page</span>
           </a>
         </div>
         <div className="pt-4 pb-4">
           <a href="https://francais-du-monde.org" className="flex items-center" target="_blank" rel="noreferrer">
-            <img src="/fdm-munich/img/fdm-footer.png" className="mr-3 h-8" alt="Francais du monde logo" />
+            <img src="/adfe/img/fdm-footer.png" className="mr-3 h-8" alt="Francais du monde logo" />
           </a>
         </div>
       </div>

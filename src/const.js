@@ -3,7 +3,7 @@ export const adfm= {
 };
 
 export const path = {
-  joinUs    : "fdm-munich/join-us",
-  aboutUs   : "fdm-munich/about-us",
-  contactUs : "fdm-munich/contact-us" 
+  joinUs    : "adfe/join-us",
+  aboutUs   : "adfe/about-us",
+  contactUs : "adfe/contact-us" 
 };

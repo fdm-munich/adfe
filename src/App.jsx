@@ -6,7 +6,6 @@ import Home from "./components/home";
 function App() {
   return (
     <>
-      {/* <RouterProvider router={ router }/> */}
       <Home />
       <Footer />
     </>

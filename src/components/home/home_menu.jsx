@@ -20,19 +20,6 @@ const HomeMenu = () => {
       <li>
         <Link
           activeClass="text-upsdell-red"
-          to="page-about"
-          spy={ true }
-          smooth={ true }
-          offset={ -200 }
-          duration={ 500 }
-          className="hover:cursor-pointer"
-        >
-          Notre association
-        </Link>
-      </li>
-      <li>
-        <Link
-          activeClass="text-upsdell-red"
           to="joinus"
           spy={ true }
           smooth={ true }

@@ -1,5 +1,4 @@
-import AboutUs from "../about_us/about_us";
-import ContactUs from "../contact_us/contact_us";
+
 import NavBar from "../shared/navbar";
 import About from "./about";
 import HomeMenu from "./home_menu";
@@ -8,10 +7,10 @@ import Timeline from "./timeline";
 const Home = () => {
   return <>
     <NavBar menu={ <HomeMenu /> }/>
-    <div className="pt-4 xl:pt-60">
+    <div className="xl:pt-60 pt-16">
       <Timeline />
     </div>
-    <div className="pt-4 xl:pt-32">
+    <div className="xl:pt-32">
       <About />
     </div>
   </>;

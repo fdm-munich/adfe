@@ -1,6 +1,6 @@
 import React from "react";
 
-const SectionTitle = ( { title, subtitle, sectionID } ) => {
+const SectionTitle = ( { title, subtitle, sectionID, caption } ) => {
   return (
     <div className="col-span-12 sm:col-span-3" id={ sectionID }>
       <div className="
@@ -10,6 +10,9 @@ const SectionTitle = ( { title, subtitle, sectionID } ) => {
       ">
         <h3 className="text-3xl font-semibold">{title}</h3>
         <span className="text-sm font-bold tracking-wider uppercase dark:text-gray-400">{subtitle}</span>
+        <div className="mt-4 text-sm">
+          {caption}
+        </div>
       </div>
     </div>
   );

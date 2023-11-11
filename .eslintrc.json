@@ -19,7 +19,6 @@
   ],
   "rules": {
     "react/react-in-jsx-scope": "off",
-    "max-len":  [2, { "code": 180, "ignorePattern": "^import .*" }],
     "react/jsx-indent": ["warn", 2],
     "object-curly-spacing": ["error", "always"],
     "react/jsx-curly-spacing": ["error", "always"],

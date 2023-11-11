@@ -1,5 +1,7 @@
 import Section from "../shared/section";
 
+export const emailAddress = "munich@francais-du-monde.org";
+
 const About = () => {
   return (
     <>
@@ -12,7 +14,7 @@ const About = () => {
         </p>
       </Section>
       <Section title="Contact" subTitle="" sectionID="contact">
-        <p>Voici notre adresse email de contact: <br /><span className="text-purple-navy"> ✉️ <a href="mailto:FdM-Munich@gmx.net?subject=Contact FdM - Munich">FdM-Munich@gmx.net</a></span></p>
+        <p>Voici notre adresse email de contact: <br /><span className="text-purple-navy"> ✉️ <a href={ `mailto:${emailAddress}?subject=Contact FdM - Munich` }>{emailAddress}</a></span></p>
       </Section>
     </>
   );

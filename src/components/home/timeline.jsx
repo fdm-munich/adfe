@@ -1,11 +1,13 @@
 import SectionTitle from "../shared/section_title";
 import { events } from "../../evenements/2023";
 import { emailAddress } from "./about";
+import SubText from "../sub_text";
+
 
 const TimeLineItem = ( props ) => {
   const { Actor, title, date, Location, description, price } = props;
   return (
-    <div className="flex flex-col relative before:absolute before:top-2 before:w-4 before:h-4 before:rounded-full before:left-[-35px] before:z-[1] before:bg-upsdell-red">
+    <div className="flex flex-col relative lg:before:absolute lg:before:top-2 lg:before:w-4 lg:before:h-4 lg:before:rounded-full lg:before:left-[-35px] lg:before:z-[1] lg:before:bg-upsdell-red">
       <h3 className="text-xl font-semibold tracking-wide">{title}</h3>
       <time className="text-xs tracking-wide uppercase dark:text-gray-400">
         🗓️ {date} 
@@ -31,7 +33,7 @@ const Timeline = () => {
   return (
     <section className="dark:bg-gray-800 dark:text-gray-100" id="events">
       <div className="container max-w-5xl px-4 py-12 mx-auto">
-        <div className="grid gap-4 mx-4 sm:grid-cols-12">
+        <div className="grid gap-4 lg:mx-4 sm:grid-cols-12">
           <SectionTitle 
             subtitle={ "retrouvez nous lors de" } 
             title={ "Evenements" } 
@@ -39,9 +41,11 @@ const Timeline = () => {
               <>
                 <p>
                   Certains événements nécessiterons une participation. 
-                  Un tarif réduit sera proposé aux adhérents. Merci de vous inscrire par <a className="text-purple-navy hover:cursor-pointer hover:underline" href={ `mailto:${emailAddress}?subject=Inscription à un évènement FdM - Munich` } >email</a>.
+                  Un tarif réduit sera proposé aux adhérents. <br /> <br />
+                  <b>Merci de vous inscrire par <a className="text-upsdell-red hover:cursor-pointer hover:underline" href={ `mailto:${emailAddress}?subject=Inscription à un évènement FdM - Munich` } >email</a>.</b>
+                  <br /> <br />
+                  <SubText txt="Cette liste sera mise à jour tout au long de l&apos;année. Revenez la consulter régulièrement 😉"/>
                 </p>
-                <p className="mt-1 text-black text-opacity-40">Cette liste sera mise à jour tout au long de l&apos;année. Revenez la consulter régulièrement 😉</p>
               </>
             }
           />

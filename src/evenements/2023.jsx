@@ -42,7 +42,7 @@ export const events = [
     ,
     Location : () => <a target="blank" href="https://tambosi-odeonsplatz.de">Odeonsplatz café Tambosi</a>,
     title    : "Ballade de Noël",
-    past     : false,
+    past     : true,
   },
   {
     Actor       : () => "Ferdinand Villaume",
@@ -53,7 +53,7 @@ export const events = [
     past        : false,
   },
   {
-    date        : "2 Février 2024",
+    date        : "12 Avril 2024",
     Actor       : () => <a target="blank" href="https://www.linkedin.com/search/results/all/?fetchDeterministicClustersOnly=true&heroEntityKey=urn%3Ali%3Afsd_profile%3AACoAAALRZvkB74_aV_ns9REsGmqgB7tSgVnRrv0&keywords=elise%20vernet&origin=RICH_QUERY_TYPEAHEAD_HISTORY&position=0&searchId=ea700353-7f49-4df6-bcab-d814e078bbab&sid=ATM&spellCorrectionEnabled=true">Elise Vernet</a>,
     description : "Construction du prochain télescope Européen au Chili. Lors de cette conférence, je vous présenterais en détail l’état d’avancement du projet : le design, la fabrication, l’intégration et la vérification des éléments tels que les parties structurelles du télescope et du dôme, les miroirs et leurs supports, les différents systèmes de mesures et d’alignement, et mettrais en valeur l’expertise des entreprises européennes impliquées dans le projet.",
     Location    : () => "Bientôt annoncée",

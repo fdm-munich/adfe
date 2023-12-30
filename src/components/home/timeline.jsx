@@ -19,7 +19,18 @@ const TimeLineItem = ( props ) => {
         price && (
           <>
             <p className="mt-1 ">
-              <span className="text-upsdell-red">Participation: </span> {price.adherents}€ pour les adhérents, {price.default}€ pour les non-adhérents.
+              <span className="text-upsdell-red">Participation: </span>
+              {
+                !price.free ? (
+                  <>
+                    {price.adherents}€ pour les adhérents, {price.default}€ pour les non-adhérents.
+                  </>
+                ) : (
+                  <>
+                    libre
+                  </>
+                )
+              }
             </p>
             <p className="mt-1 text-black text-opacity-40">Possibilité d&apos;adhérer sur place.</p>
           </>

@@ -31,7 +31,7 @@ export const events = [
   {
     date        : "16 Décembre 2023 à 16h30",
     description : ( <>
-      Rencontre prévue à 16h30 à Odeonsplatz, juste devant le charmant café <b>Tambosi</b> !<br /> Nous nous dirigerons ensuite pour une agréable demi-heure de promenade dans le Jardin Anglais. La soirée se poursuivra avec une visite au marché de Noël, où nous aurons l'occasion de déguster du vin chaud ou toute autre boisson qui éveillera nos papilles.
+      Rencontre prévue à 16h30 à Odeonsplatz, juste devant le charmant café <b>Tambosi</b> !<br /> Nous nous dirigerons ensuite pour une agréable demi-heure de promenade dans le Jardin Anglais. La soirée se poursuivra avec une visite au marché de Noël, où nous aurons l&lsquo;occasion de déguster du vin chaud ou toute autre boisson qui éveillera nos papilles.
       <br /><br />
       Aucun frais de participation n&lsquo;est requis, mais chaque participant est responsable de régler ses consommations sur place.
       <br /><br />
@@ -45,12 +45,40 @@ export const events = [
     past     : true,
   },
   {
-    Actor       : () => "Ferdinand Villaume",
-    date        : "20 Janvier 2024",
-    description : "Une approche ludique, une implication personnelle, permettent de mieux appréhender et comprendre les enjeux liés aux changements climatiques. Plus de détail prochainement.",
-    Location    : () => "Bientôt annoncée",
-    title       : "Galette des rois et fresque du climat",
-    past        : false,
+    Actor : () => "Ferdinand Villaume & et Sylvain Auzoux",
+    date  : "20 Janvier 2024 de 10h à 13h",
+    description : (
+      <>
+        Français du Monde - Munich vous donne rendez-vous à la EineWeltHaus pour participer à un atelier Fresque du Climat  le samedi 20 janvier 2024 de 10h à 13h. 
+        <br  /><br  />
+        Une approche ludique, une implication personnelle, permettent de mieux appréhender et comprendre les enjeux liés aux changements climatiques.
+        <br  /><br  />
+      </>
+    ),
+    Location : () => <a target="blank" href="https://www.einewelthaus.de">EineWeltHaus salle 108</a>,
+    title    : "Fresque du climat 🌍",
+    past     : false,
+    price    : {
+      adherents : 7,
+      default   : 10
+    }
+  },
+  {
+    date : "20 Janvier 2024 à partir de 15h",
+    description : (
+      <>
+        Français du Monde - Munich vous donne rendez-vous à la EineWeltHaus pour partager des galettes des rois le samedi 20 janvier 2024 à partir de 15h. 
+        <br  /><br  />
+        Autour de cette tradition française, nous souhaitons raviver notre communauté et échanger ensemble sur des thèmes qui nous intéressent ou nous tiennent à cœur.
+        <br  /><br  />
+      </>
+    ),
+    Location : () => <a target="blank" href="https://www.einewelthaus.de">EineWeltHaus salle 109</a>,
+    title    : "Galette des rois 👑",
+    past     : false,
+    price    : {
+      free : true
+    }
   },
   {
     date        : "12 Avril 2024",

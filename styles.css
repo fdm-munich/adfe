@@ -165,7 +165,6 @@ a {
   min-height: 60px;
   font-size: 14px;
   color: #6b7280;
-  margin-bottom: 16px;
 }
 
 .archive-controls {
@@ -238,6 +237,14 @@ a {
   font-size: 14px;
   color: #6b7280;
   margin: 0;
+}
+
+.newsletter-note {
+  margin-top: 16px;
+  padding: 12px 14px;
+  background: #f9fafb;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
 }
 
 /* Footer */

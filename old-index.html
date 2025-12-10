@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Français du monde - Munich</title>
     <link rel="icon" type="image/png" href="./images/logo_circle.png" />
+    <script src="https://cdn.tailwindcss.com"></script>
     <script src="./script.js"></script>
     <link rel="stylesheet" href="./styles.css" />
   </head>
@@ -30,22 +31,22 @@
     </header>
 
     <main id="top">
-      <section id="events" class="section">
-        <div class="container">
-          <div class="events-grid">
-            <div class="events-text">
+      <section id="events" class="py-16">
+        <div class="max-w-5xl mx-auto px-4">
+          <div class="grid gap-8 lg:mx-4 sm:grid-cols-12">
+            <div class="sm:col-span-3">
               <div class="section-kicker">
-                <h2 class="h2">Évènements</h2>
-                <p class="eyebrow">retrouvez-nous</p>
+                <h2 class="text-3xl font-semibold">Évènements</h2>
+                <p class="text-sm font-bold tracking-wide uppercase text-gray-500">retrouvez-nous</p>
               </div>
-              <p class="body-text">
+              <p class="text-sm text-gray-700 leading-relaxed">
                 Retrouvez toutes nos prochaines rencontres sur le calendrier ci-contre. Inscription rapide directement via Luma.
                 En cas de question, écrivez-nous à
-                <a class="link" href="mailto:munich@francais-du-monde.org?subject=Question%20%C3%A9v%C3%A8nement%20FdM%20-%20Munich">munich@francais-du-monde.org</a>.
+                <a class="text-upsdell-red font-semibold" href="mailto:munich@francais-du-monde.org?subject=Question%20%C3%A9v%C3%A8nement%20FdM%20-%20Munich">munich@francais-du-monde.org</a>.
               </p>
             </div>
-            <div class="events-embed">
-              <div class="iframe-wrap">
+            <div class="sm:col-span-9">
+              <div class="w-full flex justify-center">
                 <iframe
                   src="https://luma.com/embed/calendar/cal-bTsMcfjWZpoBJYp/events?lt=light"
                   width="100%"

@@ -32,6 +32,10 @@ a {
   padding: 64px 0;
 }
 
+.section-muted {
+  background: #f9fafb;
+}
+
 .container {
   max-width: 64rem;
   margin: 0 auto;
@@ -80,10 +84,89 @@ a {
   text-decoration: underline;
 }
 
+.stack > * + * {
+  margin-top: 24px;
+}
+
+.stack.tight > * + * {
+  margin-top: 12px;
+}
+
+.cards-grid {
+  display: grid;
+  gap: 24px;
+}
+
+.card {
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 16px;
+  padding: 24px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.06);
+}
+
+.h3 {
+  margin: 0 0 12px 0;
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #111827;
+}
+
+.h4 {
+  margin: 0 0 8px 0;
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: #111827;
+}
+
+.text-purple {
+  color: #5f5693;
+}
+
+.text-green {
+  color: #469970;
+}
+
+.text-red {
+  color: #ae1f27;
+}
+
+.list {
+  padding-left: 20px;
+  margin: 0;
+}
+
+.list > li + li {
+  margin-top: 8px;
+}
+
+.list.tight > li + li {
+  margin-top: 6px;
+}
+
+.two-cols {
+  display: grid;
+  gap: 24px;
+}
+
+.v-center {
+  display: flex;
+  align-items: center;
+}
+
 @media (min-width: 640px) {
   .events-grid {
     grid-template-columns: 3fr 9fr;
     align-items: start;
+  }
+
+  .cards-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .two-cols {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    align-items: center;
   }
 }
 

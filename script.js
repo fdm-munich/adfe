@@ -1,15 +1,3 @@
-tailwind.config = {
-  theme: {
-    extend: {
-      colors: {
-        "upsdell-red": "#AE1F27",
-        "purple-navy": "#5F5693",
-        "green-cyan": "#469970",
-      },
-    },
-  },
-};
-
 // Enhance Mailchimp archive with year filtering and nicer layout
 document.addEventListener("DOMContentLoaded", () => {
   const archiveScript = document.getElementById("mc-archive-script");
@@ -49,7 +37,7 @@ function enhanceArchiveList() {
   if (!campaigns.length) return false;
 
   const loader = document.getElementById("archive-loading");
-  if (loader) loader.style.display = "none";
+  if (loader) loader.classList.add("hidden");
 
   const yearSelect = document.getElementById("archive-year");
   const listContainer = document.getElementById("archive-list");
@@ -106,31 +94,31 @@ function enhanceArchiveList() {
     const filtered = items.filter((item) => !filterYear || item.year === filterYear);
 
     if (!filtered.length) {
-      listContainer.innerHTML = '<p class="text-sm text-gray-500">Aucune campagne pour cette année.</p>';
+      listContainer.innerHTML = '<p class="archive-empty">Aucune campagne pour cette année.</p>';
       return;
     }
 
     filtered.forEach((item) => {
       const wrapper = document.createElement("a");
-      wrapper.className = "flex items-start justify-between gap-3 border border-gray-100 rounded-lg px-3 py-2 hover:border-gray-200 hover:bg-gray-50 transition-colors";
+      wrapper.className = "archive-card";
       wrapper.href = item.url;
       wrapper.target = "_blank";
       wrapper.rel = "noreferrer";
 
       const left = document.createElement("div");
       const dateEl = document.createElement("p");
-      dateEl.className = "text-xs uppercase text-gray-500 tracking-wide";
+      dateEl.className = "date";
       dateEl.textContent = formatDate(item.date);
 
       const title = document.createElement("p");
-      title.className = "text-sm font-semibold text-upsdell-red";
+      title.className = "title";
       title.textContent = item.title;
 
       left.appendChild(dateEl);
       left.appendChild(title);
 
       const yearBadge = document.createElement("span");
-      yearBadge.className = "text-xs text-gray-400";
+      yearBadge.className = "year";
       yearBadge.textContent = item.year;
 
       wrapper.appendChild(left);

@@ -24,6 +24,7 @@
             <li><a href="#events" class="hover:text-upsdell-red">Évènements</a></li>
             <li><a href="#association" class="hover:text-upsdell-red">Notre association</a></li>
             <li><a href="#newsletter" class="hover:text-upsdell-red">Newsletter</a></li>
+            <li><a href="#archives" class="hover:text-upsdell-red">Archives</a></li>
           </ul>
         </nav>
       </div>
@@ -47,7 +48,7 @@
             <div class="sm:col-span-9">
               <div class="w-full flex justify-center">
                 <iframe
-                  src="https://luma.com/embed/calendar/cal-bTsMcfjWZpoBJYp/events?compact=true"
+                  src="https://luma.com/embed/calendar/cal-bTsMcfjWZpoBJYp/events?lt=light"
                   width="100%"
                   height="520"
                   frameborder="0"
@@ -137,37 +138,62 @@
             <p class="text-sm font-bold tracking-wide uppercase text-gray-500">restez informé</p>
           </div>
 
-          <div id="mc_embed_shell">
-            <div id="mc_embed_signup">
-              <form action="https://francais-du-monde.us14.list-manage.com/subscribe/post?u=a185f2e45964e65f4b1a9c92c&amp;id=948dbe580b&amp;f_id=002d7ee0f0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate space-y-4" target="_self" novalidate="">
-                <div id="mc_embed_signup_scroll">
-                  <h2>Restez à l'écoute de nos actualités</h2>
-                  <div class="indicates-required"><span class="asterisk">*</span> champs obligatoires</div>
-                  <div class="mc-field-group">
-                    <label for="mce-EMAIL">Adresse email <span class="asterisk">*</span></label>
-                    <input type="email" name="EMAIL" class="required email" id="mce-EMAIL" required="" value="" />
-                  </div>
-                  <div id="mce-responses" class="clear foot">
-                    <div class="response" id="mce-error-response" style="display: none;"></div>
-                    <div class="response" id="mce-success-response" style="display: none;"></div>
-                  </div>
-                  <div aria-hidden="true" style="position: absolute; left: -5000px;">
-                    <input type="text" name="b_a185f2e45964e65f4b1a9c92c_948dbe580b" tabindex="-1" value="" />
-                  </div>
-                  <div class="optionalParent mt-2">
-                    <div class="clear foot flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 pt-2">
-                      <p class="m-0 text-sm text-gray-500 order-2 sm:order-1">
-                        <a href="http://eepurl.com/iKMd0A" title="Mailchimp - email marketing made easy and fun">
-                          <span style="display: inline-block; background-color: transparent; border-radius: 4px;">
-                            <img class="refferal_badge" src="https://digitalasset.intuit.com/render/content/dam/intuit/mc-fe/en_us/images/intuit-mc-rewards-text-dark.svg" alt="Intuit Mailchimp" />
-                          </span>
-                        </a>
-                      </p>
-                      <input type="submit" name="subscribe" id="mc-embedded-subscribe" class="button order-1 sm:order-2 sm:ml-auto" value="Je m'inscris" />
-                    </div>
-                  </div>
-                </div>
-              </form>
+          <div class="w-full overflow-hidden">
+            <iframe
+              src="https://francais-du-monde.us14.list-manage.com/subscribe?u=a185f2e45964e65f4b1a9c92c&amp;id=948dbe580b"
+              title="Inscription à la newsletter"
+              width="100%"
+              height="600"
+              frameborder="0"
+              scrolling="no"
+              class="rounded-2xl border border-gray-200 shadow-sm"
+            ></iframe>
+          </div>
+        </div>
+      </section>
+
+      <section id="archives" class="py-16 bg-gray-50">
+        <div class="max-w-5xl mx-auto px-4">
+          <div class="section-kicker mb-6">
+            <h2 class="text-3xl font-semibold">Archives</h2>
+            <p class="text-sm font-bold tracking-wide uppercase text-gray-500">campagnes précédentes</p>
+          </div>
+
+          <p class="text-sm text-gray-700 mb-6">Retrouvez les newsletters déjà envoyées ci-dessous.</p>
+
+          <div class="bg-white border border-gray-200 rounded-2xl p-6 shadow-sm">
+            <div class="flex items-center justify-center text-sm text-gray-500 min-h-[60px]" id="archive-loading">Chargement des archives…</div>
+
+            <div class="flex flex-wrap items-center gap-3 mb-4 hidden" id="archive-controls">
+              <label for="archive-year" class="text-sm text-gray-600">Filtrer par année</label>
+              <select
+                id="archive-year"
+                class="border border-gray-200 rounded-lg px-3 py-2 text-sm text-gray-800 bg-white focus:outline-none focus:ring-2 focus:ring-purple-navy"
+                disabled
+              >
+                <option>Chargement…</option>
+              </select>
+            </div>
+
+            <div id="archive-list" class="space-y-2"></div>
+
+            <div id="mc-archive-raw" class="display_archive text-sm space-y-3 hidden">
+              <script
+                id="mc-archive-script"
+                src="https://fdm-munich.us14.list-manage.com/generate-js/?u=a185f2e45964e65f4b1a9c92c&amp;show=1000&amp;fid=69074"
+                type="text/javascript"
+                onload="this.dataset.loaded='true';"
+              ></script>
+              <noscript>
+                <a
+                  class="text-upsdell-red font-semibold"
+                  href="https://us14.campaign-archive.com/home/?u=a185f2e45964e65f4b1a9c92c&amp;id=948dbe580b"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  Voir les archives complètes
+                </a>
+              </noscript>
             </div>
           </div>
         </div>
